@@ -4,7 +4,7 @@
     https://solidity.readthedocs.io/en/v0.5.0/050-breaking-changes.html
 */
 
-pragma solidity ^0.4.21;
+pragma solidity ^0.5.0;
 
 contract SimpleBank {
 
@@ -43,7 +43,7 @@ contract SimpleBank {
     //
 
     /* Use the appropriate global variable to get the sender of the transaction */
-    constructor () public {
+    constructor  () public {
 	/* Set the owner to the creator of this contract */
         owner = msg.sender;
     } 
@@ -108,4 +108,3 @@ contract SimpleBank {
         revert();
     }
 }
-
